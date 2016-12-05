@@ -6,3 +6,11 @@
 1:
 2:@user = User.find(params[:id])
 3:app/views/users/edit.html.erb
+
+1:IDの範囲を消している
+2:そのまま空のuserが生まれる
+3:そのまま文字列が入る
+4:
+
+1:1 error prohibited this micropost from being saved:のエラーが出る
+2:id=error_explanation
