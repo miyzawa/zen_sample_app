@@ -1,0 +1,8 @@
+1:IDの範囲を消している
+2:新しいIDでユーザが登録されてしまう
+3:そのまま更新される
+4:are you sure?
+
+1:
+2:@user = User.find(params[:id])
+3:app/views/users/edit.html.erb
