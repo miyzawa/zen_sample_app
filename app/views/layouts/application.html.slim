@@ -1,9 +1,19 @@
 html
   head
-    title SampleApp
+    title
+      = full_title(yield(:title))
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
-    = yield
+    header.navbar.navbar-fixed-top.navbar-inverse
+      .container
+        = link_to "sample app", "#", id: "logo"
+      nav
+        ul
+          li = link_to "Home", "#"
+          li = link_to "help", "#"
+          li = link_to "log in", "#"
+    .container
+      = yield
