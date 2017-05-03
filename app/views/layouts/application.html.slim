@@ -7,4 +7,13 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
-    = yield
+    header.navbar.navbar-fixed-top.navbar-inverse
+      .container
+        = link_to "sample app", "#", id: "logo"
+      nav
+        ul
+          li = link_to "Home", "#"
+          li = link_to "help", "#"
+          li = link_to "log in", "#"
+    .container
+      = yield
