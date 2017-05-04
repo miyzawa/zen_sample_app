@@ -11,9 +11,9 @@ html
       .container
         = link_to "sample app", "#", id: "logo"
         nav
-          nav.navbar-nav.navbar-right
-            li = link_to "Home", "#"
-            li = link_to "help", "#"
-            li = link_to "log in", "#"
+          .ul.nav.navbar-nav.navbar-right
+              li = link_to "Home", "#"
+              li = link_to "help", "#"
+              li = link_to "log in", "#"
     .container
       = yield
