@@ -10,10 +10,10 @@ html
     header.navbar.navbar-fixed-top.navbar-inverse
       .container
         = link_to "sample app", "#", id: "logo"
-      nav
-        ul
-          li = link_to "Home", "#"
-          li = link_to "help", "#"
-          li = link_to "log in", "#"
+        nav
+          nav.navbar-nav.navbar-right
+            li = link_to "Home", "#"
+            li = link_to "help", "#"
+            li = link_to "log in", "#"
     .container
       = yield
