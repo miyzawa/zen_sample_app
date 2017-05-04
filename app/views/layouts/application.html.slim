@@ -5,9 +5,15 @@ html
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    = render 'layouts/shim'
 
   body
-    = render 'layouts/header'
+    header.navbar.navbar-fixed-top.navbar-inverse
+      .container
+        = link_to "sample app", "#", id: "logo"
+      nav
+        ul
+          li = link_to "Home", "#"
+          li = link_to "help", "#"
+          li = link_to "log in", "#"
     .container
       = yield
