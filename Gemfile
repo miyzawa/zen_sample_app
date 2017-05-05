@@ -19,6 +19,7 @@ gem "slim-rails"
 gem 'pry-rails', :group => :development
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug', platform: :mri
